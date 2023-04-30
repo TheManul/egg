@@ -9,7 +9,7 @@ bot = commands.Bot(command_prefix='!', intents=disnake.Intents.all())
 
 async def on_message(message):
 
-    if "egg" or "egG" or "eGG" or "EgG" or "EGG" or "eGg" or "EGg" or "Egg" in message.content:
+    if "egg" in message.content:
 
         await message.add_reaction('🥚')
 
